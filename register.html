@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register to MyHeart</title>
+    <h1>My First Register Form</h1>
+    <hr>
+</head>
+<style>
+    body {
+        background-color: #87cefb;
+    }
+    #contry {
+        width: 35px;
+    }
+</style>
+<body>
+<form>
+  <label for="fname"><b>Firstname</b> </label><input type="text" id="fname" name="fname"><br><br>
+  <label for="mname"><b>Middlename:</b>  </label><input type="text" id="mname" name="mname"><br><br>
+  <label for="lname"><b>Lastname:</b>  </label><input type="text" id="lname" name="lname"><br><br>
+    <label id="course"><b>Course:</b> </label>
+    <select>
+        <option value="Course">Course</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="MBA">MBA</option>
+        <option value="MCA">MCA</option>
+        <option value="M.Tech">M.Tech</option>
+    </select> <br><br>
+    <label id="gender"><b>Gender:</b> </label> <br>
+    <input type="radio" id="male" name="male" value="Male">
+    <label for="male">Male</label> <br>
+    <input type="radio" id="female" name="female" value="Female">
+    <label for="female">Female</label> <br>
+    <input type="radio" id="other" name="other" value="Other">
+    <label for="other">Other</label> <br><br>
+    <label for="phone">Phone :</label>
+    <input type="text" id="contry" name="contry" value="+855">
+    <input type="text" id="phone" name="phone"> <br><br>
+    <label for="address">Address</label> <br>
+    <textarea rows="5" cols="66" id="address" name="address"></textarea> <br><br>
+
+    <label for="email"><b>Email: </b>  </label><input type="text" id="email" name="email"><br><br>
+    <label for="password"><b>Password: </b>  </label><input type="text" id="password" name="password"><br><br>
+    <label for="cfpassword"><b>Re-type password: </b>  </label><input type="text" id="cfpassword" name="cfpassword"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
