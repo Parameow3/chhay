@@ -1,0 +1,112 @@
+/*horizontal style*/
+
+.horizontal-menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.horizontal-menu a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.horizontal-menu a:hover {
+    background-color: #777;
+}
+
+.horizontal-menu a.active {
+    background-color: #9271b6; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    color: white;
+}
+header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+}
+
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #efeff0;
+    padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #fdfdfe;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #dbdbdc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .horizontal-menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .horizontal-menu a {float: none;}
+}
+
+/* Container holding the image and the text */
+.container {
+    background-color: #b7b6b6;
+    position: relative;
+    text-align: center;
+    color: black;
+}
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
