@@ -8,175 +8,276 @@
 
     <!-- 3ELEVENICON -->
     <link rel="icon" type="image/png"
-        href="https://cdn.discordapp.com/attachments/1049337794872479785/1051512351154769980/3Eleven.png">
+          href="https://cdn.discordapp.com/attachments/1049337794872479785/1051512351154769980/3Eleven.png">
 
     <!-- ===== Bootstrap ===== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <style>
+
+        .sidebar li .submenu {
+            list-style: none;
+            margin: 0;
+            padding: 0 1rem;
+        }
+
+        .sidebar .nav-link {
+            font-weight: 500;
+            color: var(--bs-dark);
+        }
+
+        .sidebar .nav-link:hover {
+            color: var(--bs-primary);
+        }
+
+    </style>
 </head>
 
 <body class="container" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
-    <!-- Navbar section -->
-    <header class="header_wrapper m-3 mb-5">
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://cdn.discordapp.com/attachments/1049337794872479785/1051512117100019732/3Eleven-removebg-preview.png"
-                        width="69" class="img-fluid" alt="logo" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+<!-- Navbar section -->
+<header class="header_wrapper m-3 mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://cdn.discordapp.com/attachments/1049337794872479785/1051512117100019732/3Eleven-removebg-preview.png"
+                     width="69" class="img-fluid" alt="logo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nft">NFT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <img src="image/fbLogo.png" width="25" class="img-fluid" alt="logo"/>
+                    </li>
+                    <li class="nav-item ms-lg-1">
+                        <img src="image/igLogo.png" width="25" class="img-fluid" alt="logo"/>
+                    </li>
+                    <li class="nav-item ms-lg-1">
+                        <img src="image/twitterLogo.png" width="25" class="img-fluid" alt="logo"/>
+                    </li>
+                    <li class="nav-item dropdown ms-lg-1">
+                        <img src="image/linkinLogo.png" width="25" class="img-fluid" alt="logo"/>
+                    </li>
+                    <li class="nav-item dropdown ms-lg-1">
+                        <img src="image/ytLogo.png" width="25" class="img-fluid" alt="logo"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Navigation section exit -->
+
+<!-- Verticle menu section -->
+<!-- Verticle menu section exit -->
+
+<!--  Item section  -->
+<div class="pt-5 d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <nav class="sidebar border-end bg-white list-group list-group-flush border" id="sidebar-wrapper">
+        <div class="list-group list-group-flush">
+            <div class="sidebar-heading border-bottom"><i class="bi bi-funnel-fill"></i>Filter</div>
+
+            <ul class="nav flex-column border-bottom p-1" id="nav_accordion">
+                <li class="nav-item">
+                    <a class="nav-link h5" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">
+                        For <i class="bi small bi-caret-down-fill"></i> </a>
+                    <ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
+                        <li>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="radio1" name="optradio" value="men"
+                                       checked>Men
+                                <label class="form-check-label" for="radio1"></label>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#product">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#nft">NFT</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="about.html">About Us</a>
+                        <li>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="radio2" name="optradio"
+                                       value="women">Women
+                                <label class="form-check-label" for="radio2"></label>
+                            </div>
                         </li>
                     </ul>
+                </li>
+            </ul>
+
+            <div class="border-bottom btn-group-vertical pt-2 list-group-item list-group-item-action list-group-item-light p-3"
+                 role="group" aria-label="Vertical radio toggle button group">
+                <h5>Sort by</h5>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="newItem" name="optradio" value="option3" checked>New
+                    items
+                    <label class="form-check-label" for="newItem"></label>
                 </div>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <img src="image/fbLogo.png" width="25" class="img-fluid" alt="logo" />
-                        </li>
-                        <li class="nav-item">
-                            <img src="image/igLogo.png" width="25" class="img-fluid" alt="logo" />
-                        </li>
-                        <li class="nav-item">
-                            <img src="image/twitterLogo.png" width="25" class="img-fluid" alt="logo" />
-                        </li>
-                        <li class="nav-item dropdown">
-                            <img src="image/linkinLogo.png" width="25" class="img-fluid" alt="logo" />
-                        </li>
-                        <li class="nav-item dropdown">
-                            <img src="image/ytLogo.png" width="25" class="img-fluid" alt="logo" />
-                        </li>
-                    </ul>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="highPrice" name="optradio" value="option4">High
+                    Price
+                    <label class="form-check-label" for="highPrice"></label>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!-- Navigation section exit -->
-
-    <!-- Verticle menu section -->
-    <section class="pt-5">
-        <div class="row gy-2 gx-3 align-items-center">
-
-            <div class="col-lg-3">
-                <div class="card rounded-4">
-                    <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
-                    <div class="card-body myFont row">
-                        <h6 class="card-title">Pellaca white long sleeve</h6>
-                        <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
-                        <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
-                        <a type="submit" href="#" class="btn btn-primary">Buy now</a>
-                    </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="floorPrice" name="optradio" value="option5">Floor
+                    Price
+                    <label class="form-check-label" for="floorPrice"></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="discount" name="optradio" value="option6">Best
+                    Discount
+                    <label class="form-check-label" for="discount"></label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="MostPopular" name="optradio" value="option7">Most
+                    Popular
+                    <label class="form-check-label" for="MostPopular"></label>
                 </div>
             </div>
 
-            <div class="col-lg-3">
-                <div class="card rounded-4">
-                    <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
-                    <div class="card-body myFont row">
-                        <h6 class="card-title">Pellaca white long sleeve</h6>
-                        <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
-                        <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
-                        <a type="submit" href="#" class="btn btn-primary">Buy now</a>
-                    </div>
-                </div>
+            <div class="border-bottom btn-group-vertical pt-2 list-group-item list-group-item-action list-group-item-light p-3"
+                 role="group" aria-label="Vertical radio toggle button group">
+                <h5>Price Range</h5>
+
             </div>
-
-            <div class="col-lg-3">
-                <div class="card rounded-4">
-                    <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
-                    <div class="card-body myFont row">
-                        <h6 class="card-title">Pellaca white long sleeve</h6>
-                        <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
-                        <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
-                        <a type="submit" href="#" class="btn btn-primary">Buy now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-                <div class="card rounded-4">
-                    <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
-                    <div class="card-body myFont row">
-                        <h6 class="card-title">Pellaca white long sleeve</h6>
-                        <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
-                        <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
-                        <a type="submit" href="#" class="btn btn-primary">Buy now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-                <div class="card rounded-4">
-                    <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
-                    <div class="card-body myFont row">
-                        <h6 class="card-title">Pellaca white long sleeve</h6>
-                        <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
-                        <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
-                        <a type="submit" href="#" class="btn btn-primary">Buy now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-                <div class="card rounded-4">
-                    <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
-                    <div class="card-body myFont row">
-                        <h6 class="card-title">Pellaca white long sleeve</h6>
-                        <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
-                        <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
-                        <a type="submit" href="#" class="btn btn-primary">Buy now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-                <div class="card rounded-4">
-                    <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
-                    <div class="card-body myFont row">
-                        <h6 class="card-title">Pellaca white long sleeve</h6>
-                        <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
-                        <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
-                        <a type="submit" href="#" class="btn btn-primary">Buy now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3">
-                <div class="card rounded-4">
-                    <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
-                    <div class="card-body myFont row">
-                        <h6 class="card-title">Pellaca white long sleeve</h6>
-                        <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
-                        <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
-                        <a type="submit" href="#" class="btn btn-primary">Buy now</a>
-                    </div>
-                </div>
-            </div>
-
-
 
         </div>
-    </section>
-    <!-- Verticle menu section exit -->
+    </nav>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="sidebarToggle"><i class="bi bi-funnel-fill"></i>Filter</button>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container-fluid mt-3">
+            <div class="row gy-2 gx-3 align-items-center">
+                <div class="col-lg-3">
+                    <div class="card rounded-4">
+                        <img src="image/White-Long.jpg" class="card-img-top rounded-4" alt="...">
+                        <div class="card-body myFont row">
+                            <h6 class="card-title">Pellaca white long sleeve</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
+                            <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card rounded-4">
+                        <img src="image/black_long.jpg" class="card-img-top rounded-4" alt="...">
+                        <div class="card-body myFont row">
+                            <h6 class="card-title">Pellaca black long sleeve</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
+                            <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card rounded-4">
+                        <img src="image/1670252939516.jpg" class="card-img-top rounded-4" alt="...">
+                        <div class="card-body myFont row">
+                            <h6 class="card-title">Macano silk long sleeve</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
+                            <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card rounded-4">
+                        <img src="image/1670252944638.jpg" class="card-img-top rounded-4" alt="...">
+                        <div class="card-body myFont row">
+                            <h6 class="card-title">Tropical silk long sleeve</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
+                            <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card rounded-4">
+                        <img src="image/1670253089949.jpg" class="card-img-top rounded-4" alt="...">
+                        <div class="card-body myFont row">
+                            <h6 class="card-title">Milky bear long sleeve</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
+                            <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card rounded-4">
+                        <img src="image/1670253092200.jpg" class="card-img-top rounded-4" alt="...">
+                        <div class="card-body myFont row">
+                            <h6 class="card-title">Brownie bear long sleeve</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
+                            <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card rounded-4">
+                        <img src="image/image.png" class="card-img-top rounded-4" alt="...">
+                        <div class="card-body myFont row">
+                            <h6 class="card-title">Purple Hoodie</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9.99$</p>
+                            <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card rounded-4">
+                        <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
+                        <div class="card-body myFont row">
+                            <h6 class="card-title">PaPa N</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> Single</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9999B$</p>
+                            <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Item section exited  -->
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="scripts.js"></script>
 </body>
 
 </html>
