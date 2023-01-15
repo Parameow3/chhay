@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product</title>
+
+  <!-- 3ELEVENICON -->
+  <link rel="icon" type="image/png"
+        href="https://cdn.discordapp.com/attachments/1049337794872479785/1051512351154769980/3Eleven.png">
+
+  <!-- ===== Bootstrap ===== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+  <style>
+
+    .sidebar li .submenu {
+      list-style: none;
+      margin: 0;
+      padding: 0 1rem;
+    }
+
+    .sidebar .nav-link {
+      font-weight: 500;
+      color: var(--bs-dark);
+    }
+
+    .sidebar .nav-link:hover {
+      color: var(--bs-primary);
+    }
+
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+<!-- Navbar section -->
+<header class="header_wrapper m-3 mb-5">
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn.discordapp.com/attachments/1049337794872479785/1051512117100019732/3Eleven-removebg-preview.png"
+             width="69" class="img-fluid" alt="logo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="nft.html">NFT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <img src="image/fbLogo.png" width="25" class="img-fluid" alt="logo"/>
+          </li>
+          <li class="nav-item ms-lg-1">
+            <img src="image/igLogo.png" width="25" class="img-fluid" alt="logo"/>
+          </li>
+          <li class="nav-item ms-lg-1">
+            <img src="image/twitterLogo.png" width="25" class="img-fluid" alt="logo"/>
+          </li>
+          <li class="nav-item dropdown ms-lg-1">
+            <img src="image/linkinLogo.png" width="25" class="img-fluid" alt="logo"/>
+          </li>
+          <li class="nav-item dropdown ms-lg-1">
+            <img src="image/ytLogo.png" width="25" class="img-fluid" alt="logo"/>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Navigation section exit -->
+
+<!-- Verticle menu section -->
+<!-- Verticle menu section exit -->
+
+<!--  Item section  -->
+<div class="pt-5 d-flex" id="wrapper">
+  <!-- Sidebar-->
+  <nav class="sidebar border-end bg-white list-group list-group-flush border" id="sidebar-wrapper">
+    <div class="list-group list-group-flush">
+      <div class="sidebar-heading border-bottom"><i class="bi bi-funnel-fill"></i>Filter</div>
+      <!-- For -->
+      <ul class="nav flex-column border-bottom p-1" id="nav_accordion">
+        <li class="nav-item">
+          <a class="nav-link h5" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">
+            For <i class="bi small bi-caret-down-fill"></i> </a>
+          <ul id="menu_item1" class="submenu collapse" data-bs-parent="#nav_accordion">
+            <li>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="radio1" name="optradio" value="men"
+                       checked>Men
+                <label class="form-check-label" for="radio1"></label>
+              </div>
+            </li>
+            <li>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="radio2" name="optradio"
+                       value="women">Women
+                <label class="form-check-label" for="radio2"></label>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Sort by -->
+      <div class="border-bottom btn-group-vertical pt-2 list-group-item list-group-item-action list-group-item-light p-3"
+           role="group" aria-label="Vertical radio toggle button group">
+        <h5>Sort by</h5>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="newItem" name="optradio" value="option3" checked>New
+          items
+          <label class="form-check-label" for="newItem"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="highPrice" name="optradio" value="option4">High
+          Price
+          <label class="form-check-label" for="highPrice"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="floorPrice" name="optradio" value="option5">Floor
+          Price
+          <label class="form-check-label" for="floorPrice"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="discount" name="optradio" value="option6">Best
+          Discount
+          <label class="form-check-label" for="discount"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="MostPopular" name="optradio" value="option7">Most
+          Popular
+          <label class="form-check-label" for="MostPopular"></label>
+        </div>
+      </div>
+      <!-- Price range -->
+      <div class="border-bottom btn-group-vertical pt-2 list-group-item list-group-item-action list-group-item-light p-3"
+           role="group" aria-label="Vertical radio toggle button group">
+        <h5>Price Range</h5>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Page content wrapper-->
+  <div id="page-content-wrapper">
+    <!-- Top navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light row ms-3 me-3">
+      <div class="container-fluid col">
+        <button class="btn btn-primary" id="sidebarToggle"><i class="bi bi-funnel-fill"></i>Filter</button>
+      </div>
+      <div class="col h4 fw-bold text-end">Men</div>
+    </nav>
+    <!-- Page content-->
+    <div class="container-fluid mt-3">
+      <div class="row gy-2 gx-3 align-items-center">
+        <div class="col-lg-3">
+          <div class="card rounded-4">
+            <img src="https://i.seadn.io/gcs/files/75295e9730af984deb61807cfc7d5c19.png?auto=format&w=1000" class="card-img-top rounded-4" alt="...">
+            <div class="card-body myFont row">
+              <h6 class="card-title">CryptoPunk #9998</h6>
+              <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> CryptoPunks</p>
+              <p class="col-lg-4 ms-lg-4 ps-lg-3">124,457 ETH</p>
+              <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card rounded-4">
+            <img src="https://i.seadn.io/gae/O7dBg-ztYkSdaqMIM8HgFsa4VMSV3pHuTPb9UtpiyyNDePDr8vdhERWvf62iIZde0CT0Z92kkdm-oBv2rUQA4_Hr7P9nbqXWWnKMaw?auto=format&w=1000" class="card-img-top rounded-4" alt="...">
+            <div class="card-body myFont row">
+              <h6 class="card-title">CryptoPunk #5822</h6>
+              <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> CryptoPunks</p>
+              <p class="col-lg-4 ms-lg-4 ps-lg-3">8,000 ETH</p>
+              <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card rounded-4">
+            <img src="https://i.seadn.io/gae/W3InpeH2KCJrsrRt968UKPZCni16KrKXU7yNy5cTZ9eEihVdopqok0BtnlL88InZSxL6Ov54dyD3Hbx-yttumSw?auto=format&w=1000" class="card-img-top rounded-4" alt="...">
+            <div class="card-body myFont row">
+              <h6 class="card-title">Right-click and Save As guy</h6>
+              <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> SuperRare</p>
+              <p class="col-lg-4 ms-lg-4 ps-lg-3">1,600 ETH</p>
+              <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card rounded-4">
+            <img src="https://i.seadn.io/gae/tdeldjZAnMs9kbbtbdKGJfnvJYkTqbT2bRPnlk3w1WuTQMS22-jmVQvhvUU1tRps8H-vyZRzUNvW6VlUWw9vOETAiC7YqgSQDDN6YQ?auto=format&w=1000" class="card-img-top rounded-4" alt="...">
+            <div class="card-body myFont row">
+              <h6 class="card-title">Bored Ape #6388</h6>
+              <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> Bored Ape Yacht Club</p>
+              <p class="col-lg-4 ms-lg-4 ps-lg-3">67.521 WETH</p>
+              <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card rounded-4">
+            <img src="https://firebasestorage.googleapis.com/v0/b/krama-f8422.appspot.com/o/market%2Foriginal%2F0xAE549dcC68E3608689977619887d7e4C069aC179%2FQmf3zZgVxKoJ84BtEBVFt199L9xpPCJqgGFhNAjvpoNBgk%2FImage%2002s.gif?alt=media&token=1658548085383" class="card-img-top rounded-4" alt="...">
+            <div class="card-body myFont row">
+              <h6 class="card-title">Fated ព្រហ្មលិខិត</h6>
+              <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> Hour Soben</p>
+              <p class="col-lg-4 ms-lg-4 ps-lg-3">1.5 ETH</p>
+              <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card rounded-4">
+            <img src="https://firebasestorage.googleapis.com/v0/b/krama-f8422.appspot.com/o/market%2Foriginal%2F0x0E90A05FDFe620b12Eb7a749E1C97cC780fFE71b%2FQmTgqm3XoCKiDEXQuEMFzqp5cpQcawmjA3JE1TNnfiCP6S%2FDelicately%20Arranged%20Numbers%20Create%20Everlasting%20Ripples%20216s.gif?alt=media&token=1658393536967" class="card-img-top rounded-4" alt="...">
+            <div class="card-body myFont row">
+              <h6 class="card-title">Delicately Arranged Numbers Create Everlasting Ripples 216</h6>
+              <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> Angkor Fractals</p>
+              <p class="col-lg-4 ms-lg-4 ps-lg-3">0.5 ETH</p>
+              <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card rounded-4">
+            <img src="https://firebasestorage.googleapis.com/v0/b/krama-f8422.appspot.com/o/market%2Foriginal%2F0xdBB254908577dac65D463E32360F351a89DDf118%2FQmcn1Sqzfs38eNp99p9Y7jUJ59hatwTtB4xtmyEDA75WSf%2FImage%2001_Forest%20Light.gif?alt=media&token=1658548133478" class="card-img-top rounded-4" alt="...">
+            <div class="card-body myFont row">
+              <h6 class="card-title">Forest Light</h6>
+              <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> Chhim Sothy</p>
+              <p class="col-lg-4 ms-lg-4 ps-lg-3">2 ETH</p>
+              <a type="submit" href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="card rounded-4">
+            <img src="https://i.seadn.io/gae/4g4LJp2B_-ZUx8ib6vz6_nJjqM4sPpamZnHImvO5D0pYNFzDAhEE4qzmHNbRhPYtNNGk4Kf5q7Wv7jijjkjDTwym6oGdMBA3tUPeWQ?auto=format&w=1000" class="card-img-top rounded-4" alt="...">
+            <div class="card-body myFont row">
+              <h6 class="card-title">Menghun Bored #001</h6>
+              <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> Parameow Collection</p>
+              <p class="col-lg-4 ms-lg-4 ps-lg-3">168 BTC</p>
+              <a type="submit" href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/106045040901759585145633968736383460062209259688125682373791160824544547045377" class="btn btn-primary">Offers now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  Item section exited  -->
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="scripts.js"></script>
+</body>
+
+</html>

@@ -36,7 +36,7 @@
     </style>
 </head>
 
-<body class="container" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
 <!-- Navbar section -->
 <header class="header_wrapper m-3 mb-5">
     <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff;">
@@ -60,7 +60,7 @@
                         <a class="nav-link active" href="product.html">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#nft">NFT</a>
+                        <a class="nav-link" href="nft.html">NFT</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="about.html">About Us</a>
@@ -101,7 +101,7 @@
     <nav class="sidebar border-end bg-white list-group list-group-flush border" id="sidebar-wrapper">
         <div class="list-group list-group-flush">
             <div class="sidebar-heading border-bottom"><i class="bi bi-funnel-fill"></i>Filter</div>
-
+            <!-- For -->
             <ul class="nav flex-column border-bottom p-1" id="nav_accordion">
                 <li class="nav-item">
                     <a class="nav-link h5" data-bs-toggle="collapse" data-bs-target="#menu_item1" href="#">
@@ -124,7 +124,7 @@
                     </ul>
                 </li>
             </ul>
-
+            <!-- Sort by -->
             <div class="border-bottom btn-group-vertical pt-2 list-group-item list-group-item-action list-group-item-light p-3"
                  role="group" aria-label="Vertical radio toggle button group">
                 <h5>Sort by</h5>
@@ -154,7 +154,7 @@
                     <label class="form-check-label" for="MostPopular"></label>
                 </div>
             </div>
-
+            <!-- Price range -->
             <div class="border-bottom btn-group-vertical pt-2 list-group-item list-group-item-action list-group-item-light p-3"
                  role="group" aria-label="Vertical radio toggle button group">
                 <h5>Price Range</h5>
@@ -166,10 +166,11 @@
     <!-- Page content wrapper-->
     <div id="page-content-wrapper">
         <!-- Top navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light row ms-3 me-3">
+            <div class="container-fluid col">
                 <button class="btn btn-primary" id="sidebarToggle"><i class="bi bi-funnel-fill"></i>Filter</button>
             </div>
+            <div class="col h4 fw-bold text-end">Men</div>
         </nav>
         <!-- Page content-->
         <div class="container-fluid mt-3">
@@ -260,11 +261,11 @@
 
                 <div class="col-lg-3">
                     <div class="card rounded-4">
-                        <img src="image/chhay.jpg" class="card-img-top rounded-4" alt="...">
+                        <img src="https://www.onudesignerwear.com/images/burberry-love-print-check-stretch-cotton-oversized-shirt-archive-beige-p10173-18277_medium.jpg" class="card-img-top rounded-4" alt="...">
                         <div class="card-body myFont row">
-                            <h6 class="card-title">PaPa N</h6>
-                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> Single</p>
-                            <p class="col-lg-4 ms-lg-4 ps-lg-3">9999B$</p>
+                            <h6 class="card-title">Burberry Love</h6>
+                            <p class="col-lg-6 me-lg-2 pe-lg-3"><img src="image/available.svg" height="16"> In stock</p>
+                            <p class="col-lg-4 ms-lg-4 ps-lg-3">168$</p>
                             <a type="submit" href="#" class="btn btn-primary">Buy now</a>
                         </div>
                     </div>
