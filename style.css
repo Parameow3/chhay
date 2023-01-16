@@ -30,21 +30,202 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-#slider-div {
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
+.list-line li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
 }
 
-#slider-div>div {
-    margin: 8px;
-}
-
-.slider-label {
+.list-line li:before {
+    content: "";
     position: absolute;
-    background-color: #eee;
-    padding: 4px;
-    font-size: 0.75rem;
+    left: 0;
+    top: 0.7rem;
+    width: 10px;
+    height: 2px;
+    background: #000;
+}
+
+.heading {
+    font-size: 28px;
+}
+
+.section {
+    padding: 7rem 0;
+}
+
+/* Services */
+.services i {
+    font-size: 40px;
+}
+
+.services h4 {
+    padding-top: 10px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    font-size: 14px;
+    background-color: #fdb315;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.footer .footer-links {
+    margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+.footer .footer-links ul a {
+    color: rgba(255, 255, 255, 0.91);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+    color: #fff;
+}
+
+.footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .credits {
+    padding-top: 4px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer .credits a {
+    color: #fff;
+}
+
+.slider{
+    /*padding: 30px;*/
+    border-radius: 3px;
+    /*top: 50%;*/
+    position: absolute;
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*background-color: rgb(255, 255, 255);*/
+}
+
+.range-slider {
+    width: 200px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.range-slider .rangeValues {
+    display: block;
+    /*box-shadow: 0 0 20px rgba(0,139,253,0.25);*/
+    /*padding: 20px;*/
+    /*font-size: 22px;*/
+    margin-bottom: 5px;
+}
+
+.range-slider-coin {
+    width: 200px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.range-slider-coin .rangeCoins{
+    display: block;
+    /*box-shadow: 0 0 20px rgba(0,139,253,0.25);*/
+    /*padding: 20px;*/
+    /*font-size: 22px;*/
+    margin-bottom: 5px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    border: 1px solid white;
+    width: 200px;
+    position: absolute;
+    left: 0;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #fada86;
+    margin-top: -6px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
 }
 
 *,
@@ -2534,10 +2715,7 @@ textarea.form-control-lg {
 .form-floating > .form-control::placeholder {
     color: transparent;
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown) {
-    padding-top: 1.625rem;
-    padding-bottom: 0.625rem;
-}
+
 .form-floating > .form-control:not(:-ms-input-placeholder) {
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
@@ -2554,10 +2732,7 @@ textarea.form-control-lg {
     padding-top: 1.625rem;
     padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label {
-    opacity: 0.65;
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
-}
+
 .form-floating > .form-control:not(:-ms-input-placeholder) ~ label {
     opacity: 0.65;
     transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
@@ -3942,10 +4117,6 @@ textarea.form-control-lg {
     background-size: 100%;
 }
 
-.navbar-nav-scroll {
-    max-height: var(--bs-scroll-height, 75vh);
-    overflow-y: auto;
-}
 
 @media (min-width: 576px) {
     .navbar-expand-sm {
@@ -4531,12 +4702,7 @@ textarea.form-control-lg {
 .breadcrumb-item + .breadcrumb-item {
     padding-left: 0.5rem;
 }
-.breadcrumb-item + .breadcrumb-item::before {
-    float: left;
-    padding-right: 0.5rem;
-    color: #6c757d;
-    content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
-}
+
 .breadcrumb-item.active {
     color: #6c757d;
 }
@@ -5189,13 +5355,7 @@ textarea.form-control-lg {
     display: none;
 }
 
-.toast-container {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    max-width: 100%;
-    pointer-events: none;
-}
+
 .toast-container > :not(:last-child) {
     margin-bottom: 0.75rem;
 }
@@ -6150,14 +6310,6 @@ textarea.form-control-lg {
     50% {
         opacity: 0.2;
     }
-}
-.placeholder-wave {
-    -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
-    mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
-    -webkit-mask-size: 200% 100%;
-    mask-size: 200% 100%;
-    -webkit-animation: placeholder-wave 2s linear infinite;
-    animation: placeholder-wave 2s linear infinite;
 }
 
 @-webkit-keyframes placeholder-wave {
